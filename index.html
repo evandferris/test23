@@ -1,7 +1,66 @@
 <!DOCTYPE html>
+<style>
+html {
+
+    font-size: 10px; 
+    font-family: "Quicksand", sans-serif; 
+}
+
+html {
+
+    background-color: #0E8794}
+
+body {
+
+    width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 0px 20px 20px 20px;
+    border: 5px solid black;
+
+}
+
+img {
+
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+
+    font-size 60px;
+    text-align: center
+}
+
+p, li {
+
+    font-size: 16px;
+    line-height; 2;
+    letter-spacing: 1px;
+}
+
+.smaller-image {
+
+width: 300px;
+height: 300px;
+
+}
+
+.thin-black-border {
+
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.div-background {
+
+    background-color:peru;
+}
+</style>
 
 <html>
-
+    
     <head> 
         <meta charset="utf-8">
         <title>The Serrif Project</title>
@@ -10,11 +69,12 @@
     </head>
     <body> 
         <h1>The Serrif Project</h1>
-        <img src="images/serrif-logo3.jpg" alt="Serrif angel motif as logo">
+        <img class= "smaller-image thin-black-border" src="images/serrif-logo3.jpg" alt="Serrif angel motif as logo">
         
         
         <p>The Serrif Project is a remote-based development initiative. Our objective is to deliver free web-based research tools to:</p>
 
+        <div>
         <ul>
            <li>Academic institutions in developing economies</li> 
            <li>Independent researchers and intellectuals seeking to develop their academic pursuits</li>
@@ -28,6 +88,35 @@
         <p>
             Read <a href="Serrif.com/home/Our-Vision">Our Vision</a> for more details on our mission, platform, and roadmap to deployment
         </p>
+        </div>
+        <form= action="https://freecatphotoapp.com/submit-cat-photo">  
+            <input type="text" required> 
+            <placeholder="Search Our Website"> 
+            <button type="submit">Submit</button>
+        </form>
+        <br></br>
+        <label for= "People">
+            <input type="radio" name="people-places">People
+        </label>
+        
+        <label for="Places">
+            <input type="radio" name="people-places">Places
+        </label>
+        
+        <br></br>
+        
+        <label for="Developers">
+            <input id="developers" value="Developers" type="checkbox" name="Creators">Developers
+        </label>
+
+        <label for="Sponsors">
+            <input id="Sponsors" value="Sponsors" type="checkbox" name="Creator">Sponsors
+        </label>
+        
+        <label for="Pages">
+            <input id="Pages" value="Pages" type="checkbox" name="Page">Pages
+        </label>
+
     </body>
 
 </html>
